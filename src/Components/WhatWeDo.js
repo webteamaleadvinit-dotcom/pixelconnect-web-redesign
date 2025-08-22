@@ -12,13 +12,13 @@ const WhatWeDo = () => {
           </span>
         </h2>
         <p className="text-lg md:text-xl text-gray-600 font-medium">
-          From creative design to technical development, we deliver comprehensive
-          solutions that transform your ideas into reality.
+          From creative design to technical development, we deliver
+          comprehensive solutions that transform your ideas into reality.
         </p>
       </div>
 
       {/* Cards Grid */}
-      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+      <div className="mt-16 flex flex-wrap items-center justify-center gap-10">
         <WhatWeDoCard
           title="Content Writing"
           description="Engaging blog posts, web copy, and marketing content that converts."
@@ -113,6 +113,59 @@ const WhatWeDo = () => {
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
               <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+          }
+        />
+      </div>
+
+      <div className="max-w-3xl mt-10 space-y-6">
+        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            Technical Services
+          </span>
+        </h2>
+      </div>
+
+      <div className="mt-16 flex flex-wrap items-center justify-center gap-10">
+        <WhatWeDoCard
+          title="Web Development"
+          description="Modern, responsive websites and web applications built with latest tech."
+          svg={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-code w-8 h-8"
+            >
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          }
+        />
+
+        <WhatWeDoCard
+          title="Automation"
+          description="Streamline your workflows with custom automation solutions."
+          svg={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-zap w-8 h-8"
+            >
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
             </svg>
           }
         />
