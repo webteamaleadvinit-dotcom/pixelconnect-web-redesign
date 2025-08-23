@@ -4,7 +4,7 @@ import HeroImage from "../Assets/HeroImage.png";
 const Hero = () => {
   return (
     <div>
-      <div className="bg-gradient-to-tr from-pink-100 via-purple-200 via-blue-200 to-indigo-300 text-gray-900">
+      <div className="relative py-28 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
           {/* Left Content */}
           <div className="flex flex-col items-center md:items-start gap-8 text-center md:text-left">
