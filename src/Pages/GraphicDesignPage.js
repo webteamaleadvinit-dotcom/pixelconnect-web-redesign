@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 const GraphicDesignPage = () => {
   return (
     <div className="bg-gradient-to-b from-pink-50 via-purple-50 to-blue-50 text-gray-900">
+      <div className="absolute top-[-5rem] left-[-5rem] w-80 h-80 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 rounded-full blur-3xl opacity-30 animate-[float_8s_ease-in-out_infinite]"></div>
+      <div className="absolute bottom-[-6rem] right-[-6rem] w-[28rem] h-[28rem] bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 rounded-full blur-3xl opacity-30 animate-[float_10s_ease-in-out_infinite_reverse]"></div>
+
       {/* Hero Section */}
       <section className="relative text-center py-24 px-6 md:px-12 lg:px-20">
         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">

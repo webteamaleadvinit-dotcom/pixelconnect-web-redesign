@@ -5,6 +5,9 @@ const Hero = () => {
   return (
     <div>
       <div className="relative py-28 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 overflow-hidden">
+        <div className="absolute top-[-5rem] left-[-5rem] w-80 h-80 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 rounded-full blur-3xl opacity-30 animate-[float_8s_ease-in-out_infinite]"></div>
+        <div className="absolute bottom-[-6rem] right-[-6rem] w-[28rem] h-[28rem] bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 rounded-full blur-3xl opacity-30 animate-[float_10s_ease-in-out_infinite_reverse]"></div>
+
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
           {/* Left Content */}
           <div className="flex flex-col items-center md:items-start gap-8 text-center md:text-left">
