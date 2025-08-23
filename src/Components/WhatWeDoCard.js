@@ -61,14 +61,13 @@
 
 // export default WhatWeDoCard;
 
-
 import React from "react";
+import { Link } from "react-router";
 
 const WhatWeDoCard = ({ title, description, svg }) => {
   return (
     <div className="group [perspective:1000px] w-80 h-64 m-4">
       <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-        
         {/* FRONT SIDE */}
         <div className="absolute inset-0 bg-white rounded-2xl shadow-md p-6 flex flex-col items-start justify-center [backface-visibility:hidden]">
           <div className="text-blue-500 mb-4">{svg}</div>
@@ -80,8 +79,8 @@ const WhatWeDoCard = ({ title, description, svg }) => {
         <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500 via-blue-400 to-blue-600 flex flex-col items-center justify-center p-6 [transform:rotateY(180deg)] [backface-visibility:hidden] text-white">
           <div className="mb-4">{svg}</div>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
-          <a
-            href="#"
+          <Link
+            to="/graphic"
             className="font-medium flex items-center gap-1 hover:underline"
           >
             Learn More
@@ -96,7 +95,7 @@ const WhatWeDoCard = ({ title, description, svg }) => {
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

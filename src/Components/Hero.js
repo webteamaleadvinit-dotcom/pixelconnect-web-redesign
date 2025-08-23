@@ -1,19 +1,20 @@
 import React from "react";
 import HeroImage from "../Assets/HeroImage.png";
+
 const Hero = () => {
   return (
     <div>
-      <div className="relative bg-gradient-to-br from-[#F5FAFF] via-white to-blue-50 overflow-hidden">
+      <div className="bg-gradient-to-tr from-pink-100 via-purple-200 via-blue-200 to-indigo-300 text-gray-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
           {/* Left Content */}
           <div className="flex flex-col items-center md:items-start gap-8 text-center md:text-left">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-gray-900">
               Where{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-blue-700 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text">
                 Creativity
               </span>{" "}
               Meets{" "}
-              <span className="bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-pink-500 to-purple-600 text-transparent bg-clip-text">
                 Code
               </span>
             </h1>
@@ -26,14 +27,16 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-wrap justify-center md:justify-start gap-6">
               <button
-                className="group inline-flex items-center gap-2 px-7 py-3 rounded-full 
-          bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold text-lg shadow-md 
-          hover:shadow-xl transition-all duration-300 ease-out transform hover:scale-105"
+                className="inline-flex items-center gap-2 px-8 py-3 rounded-full 
+  bg-gradient-to-r from-pink-500 via-purple-500 to-violet-600 
+  text-white font-semibold text-lg shadow-lg 
+  hover:shadow-2xl transform hover:scale-110 
+  transition duration-300 ease-in-out animate-bounce"
               >
                 Hire Us
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-2"
+                  className="w-5 h-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -44,9 +47,9 @@ const Hero = () => {
               </button>
 
               <button
-                className="group inline-flex items-center gap-2 px-7 py-3 rounded-xl 
-          bg-white/80 backdrop-blur-md shadow-lg border border-gray-200 text-gray-700 font-semibold text-lg 
-          hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="group inline-flex items-center gap-2 px-7 py-3 rounded-full 
+                  bg-white/90 backdrop-blur-md shadow-md border border-gray-200 text-gray-700 font-semibold text-lg 
+                  hover:bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 See Our Work
                 <svg
@@ -72,7 +75,7 @@ const Hero = () => {
               ].map((stat, i) => (
                 <div
                   key={i}
-                  className="p-4 bg-white/70 backdrop-blur-md rounded-xl shadow hover:shadow-lg transition-all"
+                  className="p-4 bg-white rounded-xl shadow hover:shadow-md transition-all"
                 >
                   <div className="text-3xl font-bold text-gray-900">
                     {stat.value}
@@ -84,12 +87,11 @@ const Hero = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
-            <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+          <div className="relative flex justify-center">
             <img
               src={HeroImage}
               alt="Hero"
-              className="relative z-10 w-full max-w-md mx-auto drop-shadow-2xl"
+              className="relative z-10 w-full max-w-md mx-auto drop-shadow-xl"
             />
           </div>
         </div>
