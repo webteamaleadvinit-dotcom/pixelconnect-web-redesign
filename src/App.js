@@ -1,10 +1,13 @@
-import CareerPage from "./pages/CareerPage";
+import React from "react";
+import WhyChooseUs from "./components/WhyChooseUs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <CareerPage />
-    </div>
+    <>
+      <WhyChooseUs />
+      <Footer />
+    </>
   );
 }
 
