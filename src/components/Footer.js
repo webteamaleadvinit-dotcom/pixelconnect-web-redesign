@@ -7,16 +7,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         
         {/* Company Info */}
-        <div>
-          <h2 className="text-2xl font-bold mb-4">PixelConnect</h2>
-          <p className="text-sm mb-4">
-            Where creativity meets code. We're a modern creative & technical
-            freelancing agency built by emerging talent, delivering exceptional
-            results for businesses worldwide.
-          </p>
-          <p className="text-sm">📞 +91 98765 43210</p>
-          <p className="text-sm">📍 Pune, India</p>
-        </div>
+<div>
+  <h2 className="text-2xl font-bold mb-4">PixelConnect</h2>
+  <p className="text-sm mb-4">
+    Where creativity meets code. We're a modern creative & technical
+    freelancing agency built by emerging talent, delivering exceptional
+    results for businesses worldwide.
+  </p>
+</div>
 
         {/* Quick Links (clickable with React Router) */}
         <div>
