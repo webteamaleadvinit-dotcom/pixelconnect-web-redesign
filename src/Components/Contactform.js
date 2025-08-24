@@ -55,7 +55,7 @@ const Contactform=()=>{
             <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 py-20 px-6">
                 <div className="absolute top-[-5rem] left-[-5rem] w-80 h-80 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 rounded-full blur-3xl opacity-30 animate-[float_8s_ease-in-out_infinite]"></div>
       <div className="absolute bottom-[-6rem] right-[-6rem] w-[28rem] h-[28rem] bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 rounded-full blur-3xl opacity-30 animate-[float_10s_ease-in-out_infinite_reverse]"></div>
-                <form onSubmit={handleSubmit} className="bg-white border hover:border-4 hover:border-blue-500 w-96 xl:w-1/2 mx-auto p-20">
+                <form onSubmit={handleSubmit} className="bg-white w-96 xl:w-1/2 mx-auto p-20" data-aos="fade-up-right">
               <h4 className="text-2xl font-bold text-center mb-5">Contact Us</h4>
               <div className="mb-5">
                 <p className="leading-loose font-bold"><label>Name :- </label></p>

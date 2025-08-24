@@ -1,17 +1,22 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-<<<<<<< HEAD
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Contact from "./Components/Contact";
 import Ourwork from "./Components/Ourwork";
 import Service from "./Pages/Service";
-=======
-import Navbar from "./Navbar";
-import Contact from "./Contact";
-import Ourwork from "./Ourwork";
->>>>>>> 6cb995f88314471744d51f8a090052cb60c45f1f
 
 function App() {
+
+  useEffect(() => {
+        AOS.init({
+          duration: 1000, // Animation duration in milliseconds
+          once: true,    // Whether animation should only happen once
+          // ... other options like easing, offset, disable
+        });
+      }, []); // Empty dependency array ensures it runs only once on mount
 
   return (
     <>
@@ -19,21 +24,12 @@ function App() {
         <Navbar/>
 
       <Routes>
-<<<<<<< HEAD
         <Route path="/Home" element={<Home/>}/>
         <Route path="/Service" element={<Service/>}/>
         <Route path="/Ourwork" element={<Ourwork/>}/>
         {/* <Route path="/" element={<About/>}/> */}
         <Route path="/Contact" element={<Contact/>}/>
         {/* <Route path="/" element={<Career/>}/> */}
-=======
-        {/* <Route path="/" element={<Home/>}/> */}
-        {/* <Route path="/" element={<Services/>}/> */}
-        <Route path="/Ourwork" element={<Ourwork/>}/>
-        {/* <Route path="/" element={<About/>}/> */}
-        <Route path="/Contact" element={<Contact/>}/>
-        {/* <Route path="/" element={<Careers/>}/> */}
->>>>>>> 6cb995f88314471744d51f8a090052cb60c45f1f
       </Routes>
       </BrowserRouter>
     </>

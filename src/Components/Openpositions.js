@@ -39,15 +39,20 @@ const Openpositions=()=>{
       <div className="absolute bottom-[-6rem] right-[-6rem] w-[28rem] h-[28rem] bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 rounded-full blur-3xl opacity-30 animate-[float_10s_ease-in-out_infinite_reverse]"></div>
             <div className="container mx-auto">
                 <div className="grid xl:grid-cols-2 gap-4 mt-10">
-                <div className="pt-5">
+                <div className="pt-5" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                         <img src="image/illustration/openposition.jpg" className="w-96 h-96 mx-auto rounded-3xl"/>
                 </div>
-                <div className="sm:p-5">
+                <div className="sm:p-5" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
         <div>
             <h3 className="text-4xl font-bold leading-loose tracking-wide">Open Positions</h3>
             <p className="text-lg leading-loose tracking-wide">Explore our current internship opportunities and find the perfect role to kickstart your career.</p>
         </div>
-      <div className="space-y-2">
+      <div className="space-y-2" data-aos="fade-up">
         {items.map((item, index) => (
           <div
             key={index}
@@ -62,11 +67,17 @@ const Openpositions=()=>{
                 {openIndex === index ? "−" : "+"}
               </span>
             </div>
-
             {openIndex === index && (
-              <p className="text-gray-600 mt-2">{item.content}</p>
+              <div className="mt-2">
+                <p className="text-gray-600 mb-3">{item.content}</p>
+                <button className="px-4 py-2 border w-48 h-10 bg-blue-400 rounded-lg ring-offset-2 ring-2">
+                  Apply Now
+                </button>
+              </div>
             )}
           </div>
+
+          
         ))}
       </div>
     </div>
