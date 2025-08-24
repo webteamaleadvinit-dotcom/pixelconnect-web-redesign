@@ -8,6 +8,10 @@ export default function Footer() {
         {/* Company Info */}
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">PixelConnect</h2>
+          <p className="text-gray-600 mb-4">
+            Where creativity meets code. We're a modern creative & technical freelancing 
+            agency built by emerging talent, delivering exceptional results for businesses worldwide.
+          </p>
           <p className="mb-2">📧 support@pixelconnect.com</p>
           <p className="mb-2">📞 +91 98765 43210</p>
           <p className="mb-2">📍 Pune, India</p>

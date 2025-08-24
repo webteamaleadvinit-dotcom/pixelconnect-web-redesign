@@ -1,13 +1,11 @@
-import WhyChooseUs from "./components/WhyChooseUs";
-import Footer from "./components/Footer";
+import CareerPage from "./pages/CareerPage";
 
 function App() {
   return (
-    <>
-      <WhyChooseUs />
-      <Footer />
-    </>
+    <div>
+      <CareerPage />
+    </div>
   );
 }
 
-export default App;   // <-- This line fixes your error
+export default App;
