@@ -22,6 +22,7 @@ const WhatWeDo = () => {
         <WhatWeDoCard
           title="Content Writing"
           description="Engaging blog posts, web copy, and marketing content that converts."
+          link="/services/content"
           svg={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +44,7 @@ const WhatWeDo = () => {
         <WhatWeDoCard
           title="Graphic Design"
           description="Brand identity, logos, and visual assets that make an impact."
+          link="/services/graphic"
           svg={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +66,7 @@ const WhatWeDo = () => {
         <WhatWeDoCard
           title="Presentation Design"
           description="Professional slides and pitch decks that tell your story."
+          link="/services/presentation"
           svg={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,6 +86,7 @@ const WhatWeDo = () => {
         <WhatWeDoCard
           title="Video Editing"
           description="High-quality video production for social media, YouTube, and more."
+          link="/services/video"
           svg={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -101,6 +105,7 @@ const WhatWeDo = () => {
         <WhatWeDoCard
           title="Social Media Management"
           description="Strategic content creation and management for your brand online."
+          link="/services/social"
           svg={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -130,6 +135,7 @@ const WhatWeDo = () => {
         <WhatWeDoCard
           title="Web Development"
           description="Modern, responsive websites and web applications built with latest tech."
+          link="/services/web"
           svg={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -152,6 +158,7 @@ const WhatWeDo = () => {
         <WhatWeDoCard
           title="Automation"
           description="Streamline your workflows with custom automation solutions."
+          link="/services/automation"
           svg={
             <svg
               xmlns="http://www.w3.org/2000/svg"

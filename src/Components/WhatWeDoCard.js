@@ -64,7 +64,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-const WhatWeDoCard = ({ title, description, svg }) => {
+const WhatWeDoCard = ({ title, description, svg, link }) => {
   return (
     <div className="group [perspective:1000px] w-80 h-64 m-4">
       <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -80,7 +80,7 @@ const WhatWeDoCard = ({ title, description, svg }) => {
           <div className="mb-4">{svg}</div>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
           <Link
-            to="/graphic"
+            to={link}
             className="font-medium flex items-center gap-1 hover:underline"
           >
             Learn More
