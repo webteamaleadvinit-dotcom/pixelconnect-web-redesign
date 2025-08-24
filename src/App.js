@@ -67,10 +67,10 @@ import Home from "./Pages/Home";
 import Services from "./Pages/Services";
 import Careers from "./Pages/Careers";
 import ScrollToTop from "./Components/ScrollToTop";
-import Footer from "./components/Footer";
-import WhyChooseUs from "./components/WhyChooseUs";
-import WhyInternWithUs from "./components/WhyInternWithUs";
-import ReadyToJoinUs from "./components/ReadyToJoinUs";
+import Footer from "./Components/Footer";
+import WhyChooseUs from "./Components/WhyChooseUs";
+import WhyInternWithUs from "./Components/WhyInternWithUs";
+import ReadyToJoinUs from "./Components/ReadyToJoinUs";
 
 function App() {
   return (
