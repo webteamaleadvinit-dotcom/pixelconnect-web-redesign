@@ -1,78 +1,61 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-gray-700 py-12 border-t border-gray-200">
+    <footer className="bg-gradient-to-r from-blue-900 via-purple-900 to-pink-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         
         {/* Company Info */}
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">PixelConnect</h2>
-          <p className="text-gray-600 mb-4">
-            Where creativity meets code. We're a modern creative & technical freelancing 
-            agency built by emerging talent, delivering exceptional results for businesses worldwide.
+          <h2 className="text-2xl font-bold mb-4">PixelConnect</h2>
+          <p className="text-sm mb-4">
+            Where creativity meets code. We're a modern creative & technical
+            freelancing agency built by emerging talent, delivering exceptional
+            results for businesses worldwide.
           </p>
-          <p className="mb-2">📧 support@pixelconnect.com</p>
-          <p className="mb-2">📞 +91 98765 43210</p>
-          <p className="mb-2">📍 Pune, India</p>
-          <p>📸 Instagram: 
-            <a 
-              href="https://instagram.com/pixelconnect.agency" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline ml-1"
-            >
-              @pixelconnect.agency
-            </a>
-          </p>
+          <p className="text-sm">📞 +91 98765 43210</p>
+          <p className="text-sm">📍 Pune, India</p>
         </div>
 
-        {/* Quick Links */}
+        {/* Quick Links (clickable with React Router) */}
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Quick Links</h2>
+          <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2">
-            <li><a href="#home" className="hover:text-blue-600">Home</a></li>
-            <li><a href="#about" className="hover:text-blue-600">About</a></li>
-            <li><a href="#services" className="hover:text-blue-600">Services</a></li>
-            <li><a href="#why-us" className="hover:text-blue-600">Why Choose Us</a></li>
-            <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
+            <li><Link to="/" className="hover:underline">Home</Link></li>
+            <li><Link to="/services" className="hover:underline">Services</Link></li>
+            <li><Link to="/our-work" className="hover:underline">Our Work</Link></li>
+            <li><Link to="/contact" className="hover:underline">Contact</Link></li>
+            <li><Link to="/career" className="hover:underline">Career</Link></li>
+            <li><Link to="/verify-certificate" className="hover:underline">Verify Certificate</Link></li>
           </ul>
         </div>
 
-        {/* Resources */}
+        {/* Resources (NOT duplicate of quick links anymore) */}
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Resources</h2>
+          <h2 className="text-lg font-semibold mb-4">Resources</h2>
           <ul className="space-y-2">
-            <li><a href="#blog" className="hover:text-blue-600">Blog</a></li>
-            <li><a href="#faqs" className="hover:text-blue-600">FAQs</a></li>
-            <li><a href="#privacy" className="hover:text-blue-600">Privacy Policy</a></li>
-            <li><a href="#terms" className="hover:text-blue-600">Terms & Conditions</a></li>
+            <li><a href="#" className="hover:underline">Blog</a></li>
+            <li><a href="#" className="hover:underline">Case Studies</a></li>
+            <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" className="hover:underline">Terms of Service</a></li>
           </ul>
         </div>
 
-        {/* Social Media */}
+        {/* Social Links */}
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Follow Us</h2>
-          <div className="flex space-x-5 text-gray-600">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 text-xl">
-              <FaFacebookF />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 text-xl">
-              <FaTwitter />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 text-xl">
-              <FaLinkedinIn />
-            </a>
-            <a href="https://instagram.com/pixelconnect.agency" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 text-xl">
-              <FaInstagram />
-            </a>
+          <h2 className="text-lg font-semibold mb-4">Follow Us</h2>
+          <div className="flex space-x-4">
+            <a href="#" className="hover:text-gray-300"><FaFacebookF /></a>
+            <a href="#" className="hover:text-gray-300"><FaTwitter /></a>
+            <a href="#" className="hover:text-gray-300"><FaLinkedinIn /></a>
+            <a href="#" className="hover:text-gray-300"><FaInstagram /></a>
           </div>
         </div>
       </div>
 
-      {/* Bottom */}
-      <div className="mt-10 border-t border-gray-300 text-center pt-4 text-sm text-gray-500">
-        © {new Date().getFullYear()} PixelConnect. All rights reserved.
+      <div className="mt-10 text-center text-sm text-gray-300">
+        © 2025 PixelConnect. All rights reserved.
       </div>
     </footer>
   );
