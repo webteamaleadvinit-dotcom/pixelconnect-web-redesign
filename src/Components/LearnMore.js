@@ -733,7 +733,7 @@ const LearnMore = () => {
   let service = servicesData[id];
 
   return (
-    <div className="bg-gradient-to-b from-pink-50 via-purple-50 to-blue-50 text-gray-900 ">
+    <div className="bg-gradient-to-b  via-purple-50 to-blue-50 text-gray-900 ">
       {/* Hero Section */}
       <section className="relative text-center py-24 px-6 md:px-12 lg:px-20">
         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
