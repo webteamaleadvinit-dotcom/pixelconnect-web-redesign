@@ -45,7 +45,7 @@ const Hero = () => {
             <div className="flex flex-wrap justify-center md:justify-start gap-6">
               <button
                 className="inline-flex items-center gap-2 px-8 py-3 rounded-full 
-  bg-gradient-to-r from-pink-500 via-purple-500 to-violet-600 
+  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 
   text-white font-semibold text-lg shadow-lg 
   hover:shadow-2xl transform hover:scale-110 
   transition duration-300 ease-in-out animate-bounce"

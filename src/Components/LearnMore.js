@@ -739,7 +739,7 @@ const LearnMore = () => {
         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
           {service?.heroHeading.split(" ").map((word, i) =>
             i === 2 ? (
-              <span key={i} className="text-pink-600">
+              <span key={i} className="text-blue-600">
                 {word}{" "}
               </span>
             ) : (
@@ -752,7 +752,7 @@ const LearnMore = () => {
         </p>
         <Link
           to={service?.buttonLink || "/"}
-          className="inline-block px-10 py-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold shadow-lg hover:shadow-2xl transform hover:scale-110 transition duration-300 ease-in-out animate-bounce"
+          className="inline-block px-10 py-4 rounded-full bg-gradient-to-r  from-blue-600 via-blue-700 to-blue-800 text-white font-semibold shadow-lg hover:shadow-2xl transform hover:scale-110 transition duration-300 ease-in-out animate-bounce"
         >
           {service?.buttonText}
         </Link>
@@ -760,7 +760,7 @@ const LearnMore = () => {
 
       {/* What We Do */}
       <section className="py-20 px-6 md:px-12 lg:px-20 bg-gradient-to-r from-purple-50 via-white to-pink-50">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-14 text-purple-700">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-14 text-blue-600">
           What We Do
         </h2>
         <div className="justify-center flex gap-10 flex-wrap">
