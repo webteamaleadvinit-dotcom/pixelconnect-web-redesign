@@ -34,7 +34,7 @@ const Openpositions=()=>{
 
     return(
         <>
-          <section>
+          <section className="mt-20 mb-20">
             <div className="container mx-auto mb-5">
                 <div className="grid xl:grid-cols-2 gap-4 mt-10">
                 <div className="pt-5">

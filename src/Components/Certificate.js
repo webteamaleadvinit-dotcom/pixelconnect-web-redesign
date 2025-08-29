@@ -2,10 +2,10 @@
 const Certificate=()=>{
     return(
         <>
-        <section className="">
+        <section className="mt-20 mb-20">
             <div className="container mx-auto mt-25">
                 <div className="text-center">
-                    <h3 className="text-2xl font-bold text-blue-500 leading-loose">Get Your Verified Certificate</h3>
+                    <h3 className="text-5xl font-bold text-blue-500 leading-loose">Get Your Verified Certificate</h3>
                     <p className="text-base leading-relaxed">Upon successful completion of your internship, you'll receive an official certificate that can be verified through our secure system.</p>
                 </div>
 
