@@ -2,6 +2,7 @@ import React from "react";
 import { Users, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
+
 const JoinOurTeam = () => {
   return (
     <section className="relative py-28 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 overflow-hidden">
@@ -66,6 +67,7 @@ const JoinOurTeam = () => {
           }
         `}
       </style>
+      
     </section>
   );
 };

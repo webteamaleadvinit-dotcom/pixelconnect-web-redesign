@@ -1,11 +1,16 @@
 import React from "react";
 import { Users, ArrowRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom"; // ✅ Import Link
+import Openpositions from "../Components/Openposition";
+import Certificate from "../Components/Certificate";
+import Footer from "../Components/Footer";
+import WhyInternWithUs from "../Components/Internwithus";
+import ReadyToJoinUs from "../Components/Readytojoinus";
 
 const Careers = () => {
   let navigate = useNavigate();
   return (
-    <section className="relative py-28 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 overflow-hidden font-inter">
+    <section className="relative pt-28  overflow-hidden font-inter">
       {/* Back to Home Button */}
       <div className="absolute top-6 left-6">
         <a
@@ -21,8 +26,8 @@ const Careers = () => {
       </div>
 
       {/* Floating Gradient Blobs */}
-      <div className="absolute top-[-5rem] left-[-5rem] w-72 h-72 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full blur-3xl opacity-30 animate-[float_10s_ease-in-out_infinite]"></div>
-      <div className="absolute bottom-[-6rem] right-[-6rem] w-96 h-96 bg-gradient-to-tr from-indigo-400 to-pink-500 rounded-full blur-3xl opacity-25 animate-[float_12s_ease-in-out_infinite]"></div>
+      {/* <div className="absolute top-[-5rem] left-[-5rem] w-72 h-72 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full blur-3xl opacity-30 animate-[float_10s_ease-in-out_infinite]"></div>
+      <div className="absolute bottom-[-6rem] right-[-6rem] w-96 h-96 bg-gradient-to-tr from-indigo-400 to-pink-500 rounded-full blur-3xl opacity-25 animate-[float_12s_ease-in-out_infinite]"></div> */}
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-16">
         {/* Left Content */}
@@ -79,6 +84,11 @@ const Careers = () => {
           <div className="absolute bottom-12 right-12 w-20 h-8 border-2 border-blue-600 rounded-full skew-x-12"></div>
         </div>
       </div>
+      <WhyInternWithUs/>
+      <Openpositions/>
+      <Certificate/>
+      <ReadyToJoinUs/>
+      <Footer/>
     </section>
   );
 };

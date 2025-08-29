@@ -5,10 +5,12 @@ import { Routes, Route, BrowserRouter } from "react-router";
 import ScrollToTop from "./Components/ScrollToTop";
 import Careers from "./Pages/Careers";
 import Services from "./Pages/Services";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
@@ -17,6 +19,7 @@ function App() {
           <Route path="/careers" element={<Careers />} />
         </Routes>
       </BrowserRouter>
+      
     </div>
   );
 }

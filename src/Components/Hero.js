@@ -108,7 +108,7 @@ const Hero = () => {
             <img
               src={HeroImage}
               alt="Hero"
-              className="relative z-10 w-full max-w-md mx-auto drop-shadow-xl"
+              className="relative z-2 w-full max-w-md mx-auto drop-shadow-xl"
             />
           </div>
         </div>
