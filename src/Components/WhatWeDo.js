@@ -3,7 +3,7 @@ import WhatWeDoCard from "./WhatWeDoCard";
 
 const WhatWeDo = () => {
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="service" className="py-20 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-gray-50 to-white">
       {/* Section Header */}
       <div className="max-w-3xl mx-auto text-center space-y-6">
         <h2 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">

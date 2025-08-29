@@ -2,7 +2,7 @@
 const Contact = () => {
   return (
     <>
-      <section className="text-center">
+      <section id="contact" className="text-center">
         <div className="container mx-auto pt-15">
           <div className="text-center">
             <h3 className="text-4xl font-bold text-blue-500 tracking-wide leading-loose">

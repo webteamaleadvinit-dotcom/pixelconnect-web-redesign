@@ -1,9 +1,9 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Logo from "../Assets/PixelConnectLogo.jpeg"
+import Logo from "../Assets/logo2.svg"
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-tr from-blue-600 via-blue-700 to-blue-900 text-white pt-14 mt-14">
+    <footer className="bg-gradient-to-tr from-blue-600 via-blue-700 to-blue-900 text-white pt-14 ">
 
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">

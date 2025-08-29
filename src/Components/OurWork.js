@@ -1,7 +1,7 @@
  const Ourwork=()=>{
     return(
         <>
-        <section>
+        <section id="ourwork">
             <div className="container mx-auto">
                 <h4 className="font-bold tracking-wide text-blue-500 text-center text-4xl pt-10">Our Work</h4>
                 <div className="pt-10 md:grid grid-cols-2 gap-2 lg:grid-cols-3">
