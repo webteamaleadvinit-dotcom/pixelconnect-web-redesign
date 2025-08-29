@@ -144,7 +144,10 @@ const Navbar = () => {
             <div className="w-32 h-10 mx-5">
               <img src={Logo} alt="" />
             </div>
-            <div className="w-10 h-10 text-center content-center lg:hidden">
+            <div
+              onClick={(e) => e.preventDefault()}
+              className="w-10 h-10 text-center content-center lg:hidden"
+            >
               <a href="" onClick={() => setIsOpen(!isOpen)}>
                 <i class="bi bi-list"></i>
               </a>
