@@ -20,7 +20,6 @@ const Careers = () => {
           border-gray-300 hover:border-blue-500 hover:text-blue-600
           transition-all duration-300"
         >
-          
           ← Back to Home
         </a>
       </div>
@@ -74,8 +73,18 @@ const Careers = () => {
           </div>
         </div>
 
-        {/* Right Side Doodle Illustration */}
+        {/* Right Side Doodle Illustration
         <div className="relative w-full max-w-lg flex items-center justify-center">
+          <div className="absolute w-72 h-72 rounded-full border-4 border-blue-400 opacity-60 animate-pulse"></div>
+          <div className="absolute w-60 h-60 rounded-full border-4 border-purple-400 opacity-50 animate-bounce"></div>
+          <div className="absolute w-48 h-48 rounded-full border-4 border-indigo-500 opacity-40"></div>
+
+          <div className="absolute top-10 left-10 w-16 h-16 border-2 border-dashed border-pink-500 rounded-full rotate-12"></div>
+          <div className="absolute bottom-12 right-12 w-20 h-8 border-2 border-blue-600 rounded-full skew-x-12"></div>
+        </div> */}
+
+        {/* Right Side Doodle Illustration */}
+        <div className="relative w-full max-w-lg hidden lg:flex items-center justify-center">
           <div className="absolute w-72 h-72 rounded-full border-4 border-blue-400 opacity-60 animate-pulse"></div>
           <div className="absolute w-60 h-60 rounded-full border-4 border-purple-400 opacity-50 animate-bounce"></div>
           <div className="absolute w-48 h-48 rounded-full border-4 border-indigo-500 opacity-40"></div>
@@ -84,11 +93,11 @@ const Careers = () => {
           <div className="absolute bottom-12 right-12 w-20 h-8 border-2 border-blue-600 rounded-full skew-x-12"></div>
         </div>
       </div>
-      <WhyInternWithUs/>
-      <Openpositions/>
-      <Certificate/>
-      <ReadyToJoinUs/>
-      <Footer/>
+      <WhyInternWithUs />
+      <Openpositions />
+      <Certificate />
+      <ReadyToJoinUs />
+      <Footer />
     </section>
   );
 };
