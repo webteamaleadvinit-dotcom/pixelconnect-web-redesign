@@ -291,7 +291,7 @@ const Navbar = () => {
               </a>
             </div>
             {/* Mobile Dropdown */}
-            {isOpen && (
+            {/* {isOpen && (
               <div className="lg:hidden absolute top-full left-0 w-full bg-slate-50 pt-4 pb-4 space-y-2">
                 <ul className="flex flex-col px-3 w-full space-y-2">
                   <li>
@@ -344,7 +344,32 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-            )}
+            )} */}
+            
+{isOpen && (
+        <div className="lg:hidden absolute top-full left-0 w-full bg-slate-50 pt-4 pb-4 space-y-2">
+            <ul className="flex flex-col px-3 w-full space-y-2">
+                    <li>
+                        <a href="/" className="text-base font-semibold hover:text-sky-600 hover:border-b-2 border-indigo-500">Home</a>
+                    </li>
+                    <li>
+                        <a href="#service" className="text-base font-semibold hover:text-sky-600 hover:border-b-2 border-indigo-500">Services</a>
+                    </li>
+                    <li>
+                        <a href="#ourwork" className="text-base font-semibold hover:text-sky-600 hover:border-b-2 border-indigo-500">Our Work</a>
+                    </li>
+                    <li>
+                        <a href="#" className="text-base font-semibold hover:text-sky-600 hover:border-b-2 border-indigo-500">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact" className="text-base font-semibold hover:text-sky-600 hover:border-b-2 border-indigo-500">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/careers" className="text-base font-semibold hover:text-sky-600 hover:border-b-2 border-indigo-500">Careers</a>
+                    </li>
+            </ul>
+        </div>
+      )}
             <ul className="hidden lg:flex justify-evenly">
               <li>
                 <a
